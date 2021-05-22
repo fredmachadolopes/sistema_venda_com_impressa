@@ -2,11 +2,12 @@ package br.com.loja.classeConcretas;
 
 public class Endereco {
 	
-	private String cep;
+	
 	private String rua;
 	private int numero;
 	private String bairro;
 	private String cidade;
+	private String cep;
 	private String complemento;
 	private String referencia;
 	public Endereco(String cep, String rua, int numero, String bairro, String cidade
@@ -20,6 +21,12 @@ public class Endereco {
 
 	}
 	
+	@Override
+	public String toString() {
+		return "Rua=" + rua + ", numero=" + numero + ", bairro=" + bairro + ", cidade="
+				+ cidade + "cep: " + cep ;
+	}
+
 	public String getCep() {
 		return cep;
 	}

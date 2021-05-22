@@ -1,5 +1,7 @@
 package br.com.loja.classeConcretas;
 
+import java.text.DecimalFormat;
+
 import br.com.loja.controller.CodigoProduto;
 import br.com.loja.enumpoo.Categoria;
 
@@ -10,7 +12,7 @@ public class Produto {
 	private Categoria categoria;
 	private int quantidade;
 	private double valor;
-	private double desconto =0;
+	private double desconto =0.00;
 	public Produto(String descricao, Categoria categoria, int quantidade, double valor) {
 		
 		this.descricao = descricao;
@@ -21,11 +23,12 @@ public class Produto {
 	}
 	@Override
 	public String toString() {
-		return "Produto codigo: " + codigo + ", descricao :" + descricao + ", categoria: " + categoria + ", quantidade: "
-				+ quantidade + ", valor: " + valor + ", desconto: " + desconto;
+		DecimalFormat df = new DecimalFormat("#.00");
+		return "Produto codigo: " + codigo + ", descricao :" + descricao + ", produto: " + categoria + ", quantidade: "
+				+ 1 + ", valor: " + valor + ", desconto: " + df.format(desconto);
 	}
 	public void setDesconto(double desconto) {
-		this.desconto = desconto;
+		this.desconto += desconto;
 	}
 	public int getQuantidade() {
 		return quantidade;

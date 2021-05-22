@@ -1,0 +1,14 @@
+******************Empresa: Eletro Plus ************************
+--------------------------------------------------------------
+Cliente: Maria
+celular: 156756
+endereco: Rua=Rua  noget Jr, numero=2, bairro=Rosario, cidade=Terecep: 7765
+--------------------------------------------------------------
+1 - Produto codigo: E9R9T2, descricao :Filtro pequeno porte, produto: IMPORTADOS, quantidade: 1, valor: 100.0, desconto: ,00
+2 - Produto codigo: 6U8I4F, descricao :Consul prata, produto: IMPORTADOS, quantidade: 1, valor: 75.0, desconto: ,00
+3 - Produto codigo: X1G7X2, descricao :Consul 600whats, produto: PROMOCAO, quantidade: 1, valor: 300.0, desconto: ,00
+4 - Produto codigo: 0O3U5B, descricao :Tv 60Polegadas, produto: NACIONAIS, quantidade: 1, valor: 7000.05, desconto: ,00
+--------------------------------------------------------------
+Valor do frete R$: 13.0
+Total desconto R$: 373,75
+Total pago R$: 7114,30

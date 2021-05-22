@@ -6,7 +6,8 @@ public class Cliente {
 	private String email;
 	private String celular;
 	private Endereco endereco;
-	public Cliente(String nome, String email, String celular, Endereco endereco
+	private String codigoCompra;
+	public Cliente(String nome, String email, String celular
 			, String cep, String rua, int numero, String bairro, String cidade) {
 		
 		this.nome = nome;
@@ -27,6 +28,19 @@ public class Cliente {
 	public Endereco getEndereco() {
 		return endereco;
 	}
+	public void codigoCompra(String codigoPedido) {
+
+		this.codigoCompra = codigoPedido;
+		
+	}
+	public String getCodigoCompra() {
+		return codigoCompra;
+	}
+	@Override
+	public String toString() {
+		return "Cliente: " + nome + "\ncelular: " + celular + "\nendereco: " + endereco;
+	}
+
 	
 	
 }
